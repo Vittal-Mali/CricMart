@@ -1,0 +1,175 @@
+/* Home Page Styles - Modern Design */
+
+.Home_Page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding-top: 112px;
+}
+
+.heroSlider_Home {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.heroSlider_Home::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(227, 6, 5, 0.08), transparent 52%);
+  pointer-events: none;
+}
+
+/* Section Styles */
+.featured_section,
+.trending_section {
+  padding: 4rem 0;
+}
+
+.featured_section {
+  background-color: #f8f9fa;
+}
+
+.trending_section {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(248, 249, 250, 0.95));
+}
+
+/* Section Heading Styles */
+.section_heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+.heading_title {
+  font-family: 'Archivo', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #121212;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.75px;
+}
+
+.heading_subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #6c757d;
+  margin: 0 0 1.5rem;
+  line-height: 1.8;
+}
+
+.heading_line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.heading_line::before,
+.heading_line::after {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background-color: #e5e7eb;
+}
+
+.line_accent {
+  width: 42px;
+  height: 4px;
+  background: linear-gradient(90deg, #e30605 0%, #b80504 100%);
+  border-radius: 2px;
+}
+
+/* Trending Products Grid */
+.trending-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+/* Highlight section backgrounds */
+.featured_section,
+.trending_section {
+  backdrop-filter: blur(10px);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .trending-products {
+    max-width: 1100px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .heading_title {
+    font-size: 2.2rem;
+  }
+
+  .heading_subtitle {
+    font-size: 1rem;
+  }
+
+  .featured_section,
+  .trending_section {
+    padding: 3rem 0;
+  }
+
+  .section_heading {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Home_Page {
+    padding-top: 104px;
+  }
+
+  .heading_title {
+    font-size: 1.9rem;
+  }
+
+  .trending-products {
+    padding: 0 1.25rem;
+    gap: 1rem;
+  }
+
+  .heading_line::before,
+  .heading_line::after {
+    width: 40px;
+  }
+
+  .line_accent {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .trending-products {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .featured_section,
+  .trending_section {
+    padding: 2.5rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading_title {
+    font-size: 1.6rem;
+  }
+
+  .heading_subtitle {
+    font-size: 0.95rem;
+  }
+
+  .trending-products {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+}
+
