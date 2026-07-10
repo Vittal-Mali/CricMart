@@ -20,7 +20,6 @@
 | Product Review      | Logged-in users can review products                          |
 | Shipping Options    | Specify shipping area for product delivery                   |
 | Order Tracking      | Track the status of orders                                   |
-
 | Contact Form        | Contact form for user assistance                             |
 | Saved Addresses     | Save multiple shipping addresses                             |
 | Advanced Search     | Filter products by price range, category, and rating         |
